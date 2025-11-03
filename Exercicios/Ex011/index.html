@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tentre abrir esse siyte em vários dispositivos ou simplesmente aumente e diminua o tamanhbo do seu dispositivo</p>
+    <picture> <!--Sempre respeite a ordem de carregamento de imagens.Primeiro a maior e por último a menor.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--A menor imagem deve ser carregada por último,sempre respeitando a seguencia de carregamento-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--A imagem média deve ser carregada em seguida-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível" > <!--A maior imagem deve ser carregada primeiro nos arquivos-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="auto" autoplay controls loop> <!--Sempre coloque o arquivo mais compatível primeiro-->
+        <source src="midias/winning-neffex.mp3" type="audio/mpeg"> <!--Sempre coloque o arquivo mais compatível primeiro-->
+        <source src="midias/winning-neffex.ogg" type="audio/ogg"> <!--Sempre coloque o arquivo mais compatível primeiro-->
+        <source src="midias/winning-neffex.wav" type="audio/wav"> <!--Sempre coloque o arquivo mais compatível primeiro--> <!--evite no máximo usar o arquivo WAV-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/winning-neffex.mp3">clique aqui para baixar o arquivo mp3</a></p>
+        
+    </audio>
+</body>
+</html>

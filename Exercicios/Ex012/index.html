@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>Este video está hospedado no meu servidor</p><!--A tag <width> serve para definir o tamanho do video-->
+<video controls width="500" poster="imagens/capa.png">
+<source src="midia/meu-video.mp4.mp4" type="video/mp4">
+<source src="midia/meu-video.webm" type="video/webm">
+<source src="midia/meu-video.mkv.mkv" type="video/mkv">
+<source src="midia/meu-video.ogv.ogv" type="video/ogv">
+<p>Seu navegador não tem compatividade com videos.</p>
+<!--Lembrar de sempre carregar todos os formatos de video para carregar na página,começando sempre por MP4-->
+</video>
+<h1>Inseirndo videos do youtube</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eGR4Vu_xoys?si=8lU4MHLLl_CSQsUd"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--A tag <iframe> serve para inserir videos do youtube na página--> <!--Usar sempre o link incorporado-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BXqUH86F-kA?si=4wOuzbdXxzH5XrHW"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
